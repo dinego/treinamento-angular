@@ -1,1 +1,9 @@
-<p>{{ title }}</p>
+<button *ngIf="showBtn" (click)="enviarAoPai()">
+  mandar para o pai resetar tudo
+</button>
+
+<h3>A lista:</h3>
+
+<ul>
+  <li *ngFor="let item of lista">id: {{ item.id }} - {{ item.item }}</li>
+</ul>

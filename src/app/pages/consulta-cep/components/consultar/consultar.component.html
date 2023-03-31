@@ -1,6 +1,10 @@
-<app-filho #filhoComponent></app-filho>
+<app-filho
+  [showBtn]="showBtnFilho"
+  (enviarNovoTituloAoPai)="metodoQueRecebeDoPaiParaMudarTitulo($event)"
+  [lista]="listFilho"
+></app-filho>
 
-<h3>CONSULTAR CEP</h3>
+<h3 class="titulo-h3">{{ titulo }}</h3>
 
 <div>
   <input type="text" (change)="consultarCep($event)" />
